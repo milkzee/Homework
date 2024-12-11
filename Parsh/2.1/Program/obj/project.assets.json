@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\savva\\Desktop\\Parsh\\2.0\\Program\\Program.csproj",
+      "projectUniqueName": "C:\\Users\\savva\\Documents\\GitHub\\Homework\\Parsh\\2.1\\Program\\Program.csproj",
       "projectName": "Program",
-      "projectPath": "C:\\Users\\savva\\Desktop\\Parsh\\2.0\\Program\\Program.csproj",
+      "projectPath": "C:\\Users\\savva\\Documents\\GitHub\\Homework\\Parsh\\2.1\\Program\\Program.csproj",
       "packagesPath": "C:\\Users\\savva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\savva\\Desktop\\Parsh\\2.0\\Program\\obj\\",
+      "outputPath": "C:\\Users\\savva\\Documents\\GitHub\\Homework\\Parsh\\2.1\\Program\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\savva\\AppData\\Roaming\\NuGet\\NuGet.Config",

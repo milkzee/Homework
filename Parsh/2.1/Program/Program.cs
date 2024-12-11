@@ -5,37 +5,35 @@ class Program
     static void Main()
     {
         Console.WriteLine("Введите три числа через пробел:");
-        string input = Console.ReadLine();
-        
-        // Разделение строки на массив строк и преобразование в числа
-        string[] parts = input.Split(' ');
+        string[] input = Console.ReadLine().Split(' ');
 
-        if (parts.Length != 3)
+        if (input.Length != 3 || 
+            !int.TryParse(input[0], out int a) || 
+            !int.TryParse(input[1], out int b) || 
+            !int.TryParse(input[2], out int c))
         {
-            Console.WriteLine("Пожалуйста, введите ровно три числа.");
+            Console.WriteLine("Ошибка: Введите три корректных числа.");
             return;
         }
 
-        // Парсинг чисел
-        try
-        {
-            int a = int.Parse(parts[0]);
-            int b = int.Parse(parts[1]);
-            int c = int.Parse(parts[2]);
+        int diff1 = b - a; // Разность между вторым и первым
+        int diff2 = c - b; // Разность между третьим и вторым
 
-            // Проверка условия арифметической прогрессии
-            if ((b - a) == (c - b))
-            {
-                Console.WriteLine("YES");
-            }
-            else
-            {
-                Console.WriteLine("NO");
-            }
-        }
-        catch (FormatException)
+        string result = diff1 == diff2 ? "YES" : "NO";
+
+        switch (result)
         {
-            Console.WriteLine("Ошибка: Введите только числовые значения.");
+            case "YES":
+                Console.WriteLine("YES");
+                break;
+
+            case "NO":
+                Console.WriteLine("NO");
+                break;
+
+            default:
+                Console.WriteLine("Произошла ошибка.");
+                break;
         }
     }
 }
